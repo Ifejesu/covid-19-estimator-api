@@ -1,0 +1,31 @@
+{
+  "name": "covid-19-estimator-api",
+  "version": "1.0.0",
+  "description": "Api for COVID-19 Estimator app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ifejesu/covid-19-estimator-api.git"
+  },
+  "author": "Ifejesu Olajide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ifejesu/covid-19-estimator-api/issues"
+  },
+  "homepage": "https://github.com/Ifejesu/covid-19-estimator-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "xml": "^1.0.1",
+    "xml-js": "^1.6.11"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
