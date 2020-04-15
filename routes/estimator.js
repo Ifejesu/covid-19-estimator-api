@@ -33,20 +33,20 @@ const checkParameter = (res, parameter) => {
 };
 
 router.post('/', (req, res) => {
-  const result = getEstimate(req);
-  res.status(200).json(result);
+  const estimate = getEstimate(req);
+  res.status(200).json(estimate);
 });
 
 router.post('/:format', (req, res) => {
   const urlParam = req.params.format;
   checkParameter(res, urlParam);
-  const result = getEstimate(req);
+  const estimate = getEstimate(req);
 
   if (urlParam === 'json') {
-    res.status(200).json(result);
+    res.status(200).json(estimate);
   }
   if (urlParam === 'xml') {
-    res.status(200).send(o2x(result));
+    res.status(200).send(o2x({'?xml version=\"1.0\" encoding=\"iso-8859-1\"?':null, estimate }));
   }
 });
 
